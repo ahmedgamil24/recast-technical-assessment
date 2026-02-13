@@ -11,8 +11,7 @@ document.addEventListener("click", function (e) {
     const selectedSize = document.querySelector(".size-option.active")?.dataset.size;
 
     // if (!selectedColor || !selectedSize) {
-    //   alert("Please select color and size");
-    //   return;
+
     // }
 
     cart.addItem(product, {
