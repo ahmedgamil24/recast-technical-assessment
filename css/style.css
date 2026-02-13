@@ -1,0 +1,270 @@
+/* ========== Global ========== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+}
+
+.cart {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+main {
+  /* max-width: 1200px; */
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ========== Product Layout ========== */
+.product-details-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* صور شمال - تفاصيل يمين */
+  gap: 40px;
+  align-items: start;
+}
+
+/* ========== Gallery ========== */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+/* thumbnails */
+.thumbnails {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+}
+
+.thumbnails img {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  /* border: 1px solid #ddd; */
+}
+
+
+/* main image */
+.main-image {
+  width: 100%;
+  max-height: 2673px;
+  max-width: 1783px;
+  object-fit: contain;
+  /* border: 1px solid #eee; */
+}
+
+/* ========== Product Info ========== */
+.product-info h1 {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: light;
+  line-height: 79%;
+  letter-spacing: -5%;
+  color: #FFFFFF;
+  /* margin-bottom: 10px; */
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: light;
+  line-height: 79%;
+  letter-spacing: -5%;
+  color: #AEE4FF;
+  /* margin-bottom: 16px; */
+}
+
+.description {
+  font-weight: 300;
+  font-style: light;
+  line-height: 128%;
+  letter-spacing: -5%;
+  color: #FFFFFF;
+  /* margin-bottom: 20px; */
+}
+
+.specTitle {
+  font-weight: bold;
+  font-weight: 300;
+  font-style: light;
+  line-height: 108%;
+  letter-spacing: -5%;
+  color: #AEE4FF;
+  /* margin-bottom: 4px; */
+}
+
+.pieceSpecification {
+  font-weight: 300;
+  font-style: light;
+  line-height: 128%;
+  letter-spacing: -5%;
+  /* margin-bottom: 20px; */
+  color: #FFFFFF;  
+}
+
+/* ========== Specs ========== */
+.specs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.spec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.spec .label {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: light;
+  line-height: 108%;
+  letter-spacing: -5%;
+  color: #AEE4FF;
+}
+
+.spec .desc {
+  font-weight: 300;
+  font-style: light;
+  line-height: 128%;
+  letter-spacing: -6%;
+  max-width: 344px;
+  max-height: 239px;
+  color: #FFFFFF;
+}
+
+.spec .value {
+  font-weight: 300;
+  font-size: 32px;
+  font-style: light;
+  line-height: 108%;
+  letter-spacing: -5%;
+  color: #FFFFFF;
+}
+
+/* ========== Colors & Sizes ========== */
+.colors,
+.sizes {
+  margin-bottom: 20px;
+}
+
+.colors h4,
+.sizes h4 {
+  font-weight: 300;
+  font-style: light;
+  line-height: 108%;
+  letter-spacing: -5%;
+  color: #AEE4FF;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.color-option {
+      max-width: 210px;
+  max-height: 263px;
+  padding: 8px 14px;
+  border: 3px solid #FFFFFF;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.size-option {
+  max-width: 160px;
+  max-height: 147px;
+  padding: 8px 14px;
+  border: 3px solid #FFFFFF;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.color-option:hover,
+.size-option:hover {
+  border-color: black;
+}
+
+/* ========== Add To Cart ========== */
+#add-to-cart {
+    font-weight: 400;
+  width: 100%;
+  padding: 14px;
+  background: #ADE3FE;
+  color: #000000;
+  border: 3px solid #ADE3FE;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#add-to-cart:hover {
+  opacity: 0.9;
+}
+
+/* =====================
+   Ring Collection
+===================== */
+#ring-collection {
+  margin-top: 80px;
+}
+
+#ring-collection h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card img {
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.product-card h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.product-card p {
+  color: #ccc;
+}
+
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .product-details-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  .thumbnails {
+    flex-direction: row;
+    order: 2;
+  }
+
+  
+}
+
+
