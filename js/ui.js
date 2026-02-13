@@ -24,6 +24,6 @@ class UI {
                 </article>`
             ).join("")}
         </div>
-        <button>Shop Rings</button>`
+        <button class="shop-rings-btn">Shop Rings</button>`
   }
 }
